@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/fall2023-acg-acu/main/data/building_inventory.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "count",
+      "field": "Total Floors",
+      "type": "quantitative"
+    },
+    "x": {"aggregate": "", "field": "Year Constructed", "type": "quantitative"}
+  },
+  "config": {}
+}
